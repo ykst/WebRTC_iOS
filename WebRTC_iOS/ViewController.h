@@ -7,8 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "RTCPeerConnectionDelegate.h"
+#import "RTCDataChannel.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<RTCPeerConnectionDelegate, RTCDataChannelDelegate>
 
 
 @end
