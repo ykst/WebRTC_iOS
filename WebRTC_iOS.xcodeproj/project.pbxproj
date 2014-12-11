@@ -32,8 +32,6 @@
 		98167C8E1A387A0D00549C03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		98167C901A387A0D00549C03 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		98167C931A387A0D00549C03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		98167C9E1A387A0D00549C03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		98167C9F1A387A0D00549C03 /* WebRTC_iOSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebRTC_iOSTests.m; sourceTree = "<group>"; };
 		98167CB21A3892BF00549C03 /* libWebRTC-ios-min.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libWebRTC-ios-min.a"; sourceTree = "<group>"; };
 		98167CB31A3892BF00549C03 /* RTCAudioSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTCAudioSource.h; sourceTree = "<group>"; };
 		98167CB41A3892BF00549C03 /* RTCAudioTrack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTCAudioTrack.h; sourceTree = "<group>"; };
@@ -92,7 +90,6 @@
 				98167CD21A389CB300549C03 /* AVFoundation.framework */,
 				98167CB11A3892BF00549C03 /* webrtc */,
 				98167C821A387A0D00549C03 /* WebRTC_iOS */,
-				98167C9C1A387A0D00549C03 /* WebRTC_iOSTests */,
 				98167C811A387A0D00549C03 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -125,23 +122,6 @@
 			children = (
 				98167C841A387A0D00549C03 /* Info.plist */,
 				98167C851A387A0D00549C03 /* main.m */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		98167C9C1A387A0D00549C03 /* WebRTC_iOSTests */ = {
-			isa = PBXGroup;
-			children = (
-				98167C9F1A387A0D00549C03 /* WebRTC_iOSTests.m */,
-				98167C9D1A387A0D00549C03 /* Supporting Files */,
-			);
-			path = WebRTC_iOSTests;
-			sourceTree = "<group>";
-		};
-		98167C9D1A387A0D00549C03 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				98167C9E1A387A0D00549C03 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -364,12 +344,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = WebRTC_iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/WebRTC_iOS/webrtc",
 				);
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				VALID_ARCHS = armv7;
 			};
@@ -381,6 +363,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = WebRTC_iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -411,6 +394,7 @@
 				98167CA51A387A0D00549C03 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
